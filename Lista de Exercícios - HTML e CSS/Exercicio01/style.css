@@ -1,0 +1,21 @@
+/*Estilização:
+
+O cartão deve ter fundo diferente do body, cantos arredondados e uma borda sutil
+(reaproveite a ideia de .section da aula).
+A imagem deve ter formato circular.
+O link deve mudar de cor no hover.
+*/
+
+.aluno{
+    max-width: 100%;
+    height: auto;
+}
+div{
+    display: flex;
+    background-color: #ea71ee;
+    color: #080800;
+    border: 2px dotted #ecd60d;
+    border-radius: 10px;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+}
