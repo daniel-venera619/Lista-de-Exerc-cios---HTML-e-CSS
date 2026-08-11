@@ -6,16 +6,59 @@ A imagem deve ter formato circular.
 O link deve mudar de cor no hover.
 */
 
-.aluno{
-    max-width: 100%;
-    height: auto;
-}
-div{
+/*  linear-gradient → gradiente no cartão
+    box-shadow → brilho/neon
+    border na imagem
+    font-family → fonte mais agradável*/
+
+/* ESTILIZAÇÃO DO CARTÃO */
+body {
+    background-color: #14142b;
+    /* CENTRALIZA O CARTÃO NA PÁGINA */
     display: flex;
-    background-color: #ea71ee;
-    color: #080800;
-    border: 2px dotted #ecd60d;
-    border-radius: 10px;
-    margin: 5px 10px 5px 10px;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* CARTÃO */
+.card {
+    background: linear-gradient(135deg, #ff00cc, #7b2cff, #00c6ff);
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    padding: 25px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 25px #ff00cc;
+}
+
+/* IMAGEM */
+.avatar {
+    width: 150px;
+    height: 150px;
+    /* DEIXA A IMAGEM CIRCULAR */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+/* LISTAS */
+ul {
+    text-align: left;
+}
+
+/* LINK */
+a {
+    color: #ffff00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MUDANÇA DE COR AO PASSAR O MOUSE */
+a:hover {
+    color: #00ffff;
 }

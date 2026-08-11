@@ -1,0 +1,96 @@
+/*Estilização:
+
+Diferencie visualmente a seção de ingredientes da seção de modo de 
+preparo (cores de fundo diferentes, por exemplo).
+Use div para agrupar cada bloco de conteúdo (ingredientes, preparo, etc.) e estilize cada div separadamente.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILIZAÇÃO DA PÁGINA */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* CENTRALIZA O CONTEÚDO */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #8B4513;
+    font-size: 36px;
+}
+
+/* IMAGEM DO PRATO */
+img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 15px;
+    border: 3px solid #8B4513;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+h2 {
+    color: #8B4513;
+    margin-top: 30px;
+}
+
+/* LISTAS */
+ul,
+ol {
+    width: 500px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #8B4513;
+    color: white;
+    border-radius: 10px;
+}
+
+/* PARÁGRAFOS DO RODAPÉ */
+footer p {
+    margin: 5px;
+}
