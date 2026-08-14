@@ -5,61 +5,89 @@ preparo (cores de fundo diferentes, por exemplo).
 Use div para agrupar cada bloco de conteúdo (ingredientes, preparo, etc.) e estilize cada div separadamente.*/
 
 /* ESTILIZAÇÃO DA PÁGINA */
-body{
-background-color: #FFF8F0;
-background-image: url(https://i.ytimg.com/vi/LIBigeA9GgM/maxresdefault.jpg);
-font-family: Arial, Helvetica, sans-serif;
-color: #374151;
-/*CENTRALIZAÇÂO DO CONTEUDO*/
-text-align: center;
-margin: 0;
-padding: 20px;
+body {
+    background-color: #FFF8F0; /* Define a cor de fundo da página como um tom claro de creme */
+
+    background-image: url(https://i.ytimg.com/vi/LIBigeA9GgM/maxresdefault.jpg); /* Coloca uma imagem como fundo da página */
+
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto como Arial; caso não esteja disponível, usa Helvetica ou uma fonte sem serifa */
+
+    color: #374151; /* Define a cor padrão dos textos como cinza escuro */
+
+    /* CENTRALIZAÇÃO DO CONTEÚDO */
+    text-align: center; /* Centraliza horizontalmente os textos dentro do body */
+
+    margin: 0; /* Remove a margem padrão que o navegador coloca na página */
+
+    padding: 20px; /* Cria um espaço interno de 20px entre o conteúdo e as bordas da página */
 }
 
-/*TITULO PRINCIPAL*/
-h1{
-color: #14d3da;
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #14d3da; /* Define a cor do título principal como azul-turquesa */
 }
 
-/*IMAGEM DO PRATO*/
-.quirera{
-width: 400px;
-max-width: 100%;
-border-radius: 15px;
-border: 5px solid #3F7D58;
+
+/* IMAGEM DO PRATO */
+.quirera {
+    width: 400px; /* Define a largura da imagem como 400px */
+
+    max-width: 100%; /* Impede que a imagem ultrapasse a largura disponível */
+
+    border-radius: 15px; /* Arredonda os cantos da imagem em 15px */
+
+    border: 5px solid #3F7D58; /* Cria uma borda verde de 5px ao redor da imagem */
 }
 
-/*SUBTITULOS DAS SEÇÕES*/
-h2{
-color: #14532D;
+
+/* SUBTÍTULOS DAS SEÇÕES */
+h2 {
+    color: #14532D; /* Define a cor dos subtítulos como verde escuro */
 }
 
-ul,ol{
-width: 500px;
-max-width: 90%;
-margin: 0;
-text-align: left;
-line-height: 1.8;
+
+/* LISTAS */
+ul, ol {
+    width: 500px; /* Define a largura das listas como 500px */
+
+    max-width: 90%; /* Faz com que a lista ocupe no máximo 90% da largura disponível */
+
+    margin: 0; /* Remove a margem padrão das listas */
+
+    text-align: left; /* Alinha o texto dos itens da lista à esquerda */
+
+    line-height: 1.8; /* Aumenta o espaçamento vertical entre as linhas da lista */
 }
+
 
 /* RODAPÉ */
 footer {
-margin-top: 30px;
-padding: 15px;
-background-color: #92400E;
-color: #FFFFFF;
-border-radius: 10px;
+    margin-top: 30px; /* Cria 30px de espaço acima do rodapé */
+
+    padding: 15px; /* Cria 15px de espaço interno dentro do rodapé */
+
+    background-color: #92400E; /* Define o fundo do rodapé como marrom */
+
+    color: #FFFFFF; /* Define a cor do texto do rodapé como branco */
+
+    border-radius: 10px; /* Arredonda os cantos do rodapé em 10px */
 }
+
 
 /* PARÁGRAFOS DO RODAPÉ */
 footer p {
-margin: 5px;
+    margin: 5px; /* Define uma margem de 5px ao redor dos parágrafos dentro do rodapé */
 }
 
-.estilo01{
-background-color: #DFF3E4;
+
+/* ESTILO 01 */
+.estilo01 {
+    background-color: #DFF3E4; /* Define o fundo dos elementos com essa classe como verde bem claro */
 }
 
-.estilo02{
-background-color: #F7E6C4;
+
+/* ESTILO 02 */
+.estilo02 {
+    background-color: #F7E6C4; /* Define o fundo dos elementos com essa classe como bege claro */
 }

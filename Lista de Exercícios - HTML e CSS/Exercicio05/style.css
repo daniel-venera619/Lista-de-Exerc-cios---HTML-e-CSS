@@ -1,0 +1,7 @@
+/*Estilização:
+
+Cada campo (label + input) deve ficar visualmente agrupado dentro de uma div.
+Os campos devem ter um espaçamento uniforme entre si (não use vários <br> soltos — organize com CSS).
+O formulário inteiro deve estar dentro de um "cartão" central, com largura máxima definida (pesquise sobre max-width) 
+para não esticar demais em telas largas.
+Estilize o placeholder dos campos com uma cor diferente do texto digitado.*/

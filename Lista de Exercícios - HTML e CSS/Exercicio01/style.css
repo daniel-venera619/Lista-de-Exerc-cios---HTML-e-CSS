@@ -6,59 +6,79 @@ A imagem deve ter formato circular.
 O link deve mudar de cor no hover.
 */
 
-/*  linear-gradient → gradiente no cartão
-    box-shadow → brilho/neon
-    border na imagem
-    font-family → fonte mais agradável*/
-
 /* ESTILIZAÇÃO DO CARTÃO */
 body {
-    background-color: #14142b;
+    background-color: #14142b; /* Define a cor de fundo da página como azul-marinho bem escuro */
+
     /* CENTRALIZA O CARTÃO NA PÁGINA */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
+    display: flex; /* Ativa o Flexbox para organizar e posicionar o conteúdo */
+
+    justify-content: center; /* Centraliza o cartão horizontalmente */
+
+    align-items: center; /* Centraliza o cartão verticalmente */
+
+    min-height: 100vh; /* Define uma altura mínima igual a 100% da altura da tela */
+
+    margin: 0; /* Remove a margem padrão do navegador */
+
+    font-family: Arial, sans-serif; /* Define a fonte como Arial ou, caso não esteja disponível, uma fonte sem serifa */
 }
+
 
 /* CARTÃO */
 .card {
-    background: linear-gradient(135deg, #ff00cc, #7b2cff, #00c6ff);
-    color: #ffffff;
-    border: 3px solid #ffffff;
-    border-radius: 20px;
-    padding: 25px;
-    width: 350px;
-    text-align: center;
-    box-shadow: 0 0 25px #ff00cc;
+    background: linear-gradient(135deg, #ff00cc, #7b2cff, #00c6ff); /* Cria um fundo com gradiente de três cores */
+
+    color: #ffffff; /* Define a cor padrão dos textos do cartão como branca */
+
+    border: 3px solid #ffffff; /* Cria uma borda branca de 3px ao redor do cartão */
+
+    border-radius: 20px; /* Arredonda os cantos do cartão em 20px */
+
+    padding: 25px; /* Cria 25px de espaço interno entre o conteúdo e a borda */
+
+    width: 350px; /* Define a largura do cartão como 350px */
+
+    text-align: center; /* Centraliza os textos dentro do cartão */
+
+    box-shadow: 0 0 25px #ff00cc; /* Cria uma sombra brilhante rosa ao redor do cartão */
 }
+
 
 /* IMAGEM */
 .avatar {
-    width: 150px;
-    height: 150px;
+    width: 150px; /* Define a largura da imagem como 150px */
+
+    height: 150px; /* Define a altura da imagem como 150px */
+
     /* DEIXA A IMAGEM CIRCULAR */
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #ffffff;
-    box-shadow: 0 0 20px #00ffff;
+    border-radius: 50%; /* Arredonda a imagem completamente, formando um círculo */
+
+    object-fit: cover; /* Faz a imagem preencher o espaço de 150x150 sem ficar deformada */
+
+    border: 5px solid #ffffff; /* Cria uma borda branca de 5px ao redor da imagem */
+
+    box-shadow: 0 0 20px #00ffff; /* Cria um brilho azul-ciano ao redor da imagem */
 }
+
 
 /* LISTAS */
 ul {
-    text-align: left;
+    text-align: left; /* Alinha o texto dos itens da lista à esquerda */
 }
+
 
 /* LINK */
 a {
-    color: #ffff00;
-    text-decoration: none;
-    font-weight: bold;
+    color: #ffff00; /* Define a cor dos links como amarelo */
+
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+
+    font-weight: bold; /* Deixa o texto do link em negrito */
 }
+
 
 /* MUDANÇA DE COR AO PASSAR O MOUSE */
 a:hover {
-    color: #00ffff;
+    color: #00ffff; /* Muda a cor do link para azul-ciano quando o mouse passa sobre ele */
 }

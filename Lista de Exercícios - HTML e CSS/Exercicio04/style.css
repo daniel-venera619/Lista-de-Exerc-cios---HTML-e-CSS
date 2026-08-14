@@ -1,0 +1,122 @@
+/*Estilização (use Flexbox):
+
+Cada link deve parecer um botão, ocupando a largura do "cartão" central, um embaixo do outro.
+Use display: flex com flex-direction: column para empilhar os botões com espaçamento 
+uniforme entre eles (gap).
+Cada botão deve mudar de cor de fundo no hover.*/
+
+
+/*ESTILIZAÇÂO DO BODY */
+body {
+    margin: 0; /* Remove a margem padrão */
+    background-color: #d82525; /* Define um fundo escuro */
+    overflow: hidden; /* Esconde o excesso da imagem */
+}
+
+body::before {
+    content: ""; /* Cria o pseudo-elemento */
+    position: fixed; /* Mantém o fundo fixo na tela */
+    inset: -200%; /* Aumenta a área para evitar espaços vazios ao rotacionar */
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/be/DayZ.webp?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original"); /* Define a imagem de fundo */
+    background-repeat: repeat; /* Faz a imagem se repetir horizontalmente e verticalmente */
+    background-size: 200px 100px; /* Define cada repetição com 200px de largura e 100px de altura */
+    transform: rotate(-45deg); /* Rotaciona somente o fundo */
+    opacity: 0.5; /* Deixa a imagem um pouco transparente */
+    z-index: -1; /* Coloca o fundo atrás do conteúdo */
+}
+
+
+
+/*ESTILIZAÇÂO DO BODY 
+body{
+    background-image → propriedade responsável pela imagem de fundo
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/DayZ.webp?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original);
+    background-repeat: repeat;/*Define se a imagem de fundo deve se repetir
+    background-size: 200px 100px;  /*Define o tamanho da imagem de fundo
+    
+}*/  
+
+/* ESTILIZAÇÃO DO MAIN */
+main {
+    background-color: #111111; /* Define a cor de fundo do elemento main */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto */
+    color: #8B0000; /* Define a cor padrão dos textos */
+
+    margin: 50px auto; /* Cria 50px de espaço em cima e embaixo e centraliza o cartão horizontalmente */
+    padding: 30px; /* Cria um espaço interno de 20px */
+    width:  350px; /*Define largura do Cartão*/ 
+    
+    display: flex; /* Ativa o Flexbox */
+    flex-direction:column;/*coloca os elementos um embaixo do outro*/
+    align-items: center;/*Centraliza os intens horizontalmente*/
+
+    gap: 15px; /*Cria 15px de espaço entra cada elemento*/
+    border-radius: 20px; /*Arredonda os canto do cartão*/
+}   
+
+/* IMAGEM */
+
+.avatar{
+    display: flex; /*Ativa o Flexbox*/
+    justify-content: center; /*Centraliza imagem horizontalmente*/
+}
+
+.avatar img{
+    width: 400px; /*Define largura da imagem*/
+    height: 250px;/*Define altura da imagem*/
+    border-radius: 10%; /*Transforma imagem em um circulo*/
+    object-fit: cover;/*Fazer a imagem preencher o espaço sem deformar*/
+    border: 4px solid #8B0000; /*Cria borda vermelha escura ao redor da imagem*/
+}
+
+/* TÍTULO */
+
+.titulo h1 {
+    color: #FF0000; /* Define a cor do título como vermelho intenso */
+
+    text-align: center; /* Centraliza o título */
+}
+
+/* LINKS */
+main a {
+    display: block; /* Faz o link se comportar como um bloco */
+
+    width: 300px; /* Define a largura do botão */
+    padding: 15px; /* Cria espaço interno */
+
+    background-color: #1A1A1A; /* Define a cor escura do botão */
+    color: #FFFFFF; /* Define a cor do texto */
+
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove o sublinhado */
+
+    border-radius: 10px; /* Arredonda os cantos */
+
+    box-sizing: border-box; /* Mantém a largura total em 300px */
+}
+
+
+/* DEDINI COR DOS BOTÔES*/
+.leocharada a{
+    background-color: #5C0000;
+}
+
+.pepers a{
+    background-color: #3B0A0A;
+}
+
+.lobo a{
+    background-color: #1C1C1C;
+}
+
+.idosoz a{
+    background-color: #4A0000;
+}
+
+.origemz a {
+    background-color: #260000;
+}
+
+.karmaKrew a{
+    background-color: #700000;
+}

@@ -6,36 +6,120 @@ Um botão deve ter destaque visual maior que o outro (cor mais forte, por exempl
 Adicione efeito de hover nos botões.*/
 
 /* ESTILIZAÇÃO DA PÁGINA */
-body{
-    background-color:#FFF8F0 ;
-    font-family:Arial, Helvetica, sans-serif;
-    color:#374151;
+body {
+    background-color: #FFF8F0; /* Define a cor de fundo da página*/
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto */
+    color: #374151; /* Define a cor padrão dos textos */
 
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-}   
-/*TITULO PRINCIPAL*/
-h1{
-    color: #166534;
-    text-align: center;
-    width: 100%;
-    margin: 0 0 40px 0;
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 20px; /* Cria um espaço interno de 20px */
+
+    display: flex; /* Ativa o Flexbox */
+    flex-wrap: wrap; /* Permite que os elementos quebrem para outra linha */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: flex-start; /* Alinha os elementos no início verticalmente */
 }
+
+
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #166534; /* Define a cor do título como verde escuro */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Faz o título ocupar toda a largura disponível */
+    margin: 0 0 40px 0; /* Define margem: cima 0, direita 0, baixo 40px e esquerda 0 */
+}
+
+
+/* ÁREA DO PRODUTO */
+.produto {
+    display: flex; /* Coloca os elementos lado a lado usando Flexbox */
+    align-items: flex-start; /* Alinha os elementos no início verticalmente */
+    gap: 35px; /* Cria 35px de espaço entre os elementos */
+
+    background-color: white; /* Define o fundo da área do produto como branco */
+    padding: 30px; /* Cria 30px de espaço interno */
+    border-radius: 20px; /* Arredonda os cantos em 20px */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Cria uma sombra ao redor da área */
+
+    max-width: 1000px; /* Define uma largura máxima de 1000px */
+    width: 100%; /* Faz a área ocupar toda a largura disponível */
+}
+
+
 /* IMAGEM DO BACON */
 .amor {
-    width: 400px;
-    max-width: 45%;
-    border-radius: 15px;
-    border: 5px solid #3F7D58;
-    margin-right: 35px;
+    width: 400px; /* Define a largura da imagem como 400px */
+    max-width: 100%; /* Impede que a imagem ultrapasse o espaço disponível */
+    border-radius: 15px; /* Arredonda os cantos da imagem */
+    border: 5px solid #3F7D58; /* Cria uma borda verde de 5px */
 }
-h2{
-    color:green;
-    text-align: right;
-    width:400px;
 
+
+/* ÁREA DAS INFORMAÇÕES */
+.informacoes {
+    flex: 1; /* Faz a área ocupar o espaço restante disponível */
+}
+
+
+/* NOME DO PRODUTO */
+h2 {
+    color: #166534; /* Define a cor do nome do produto como verde escuro */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 35px; /* Define o tamanho da fonte como 35px */
+    margin-top: 0; /* Remove a margem superior */
+    margin-bottom: 15px; /* Cria 15px de espaço abaixo do título */
+}
+
+
+/* PREÇO */
+h3 {
+    color: #15803D; /* Define a cor do preço como verde */
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+    margin-bottom: 25px; /* Cria 25px de espaço abaixo do preço */
+}
+
+
+/* DESCRIÇÃO */
+p {
+    font-size: 17px; /* Define o tamanho do texto como 17px */
+    line-height: 1.6; /* Define o espaçamento entre as linhas */
+}
+
+
+/* ÁREA DOS BOTÕES */
+.botoes {
+    display: flex; /* Ativa o Flexbox para os botões */
+    gap: 15px; /* Cria 15px de espaço entre os botões */
+    margin-top: 30px; /* Cria 30px de espaço acima dos botões */
+}
+
+
+/* BOTÕES */
+button {
+    padding: 14px 20px; /* Define 14px de espaço vertical e 20px horizontal */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    font-size: 16px; /* Define o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    cursor: pointer; /* Mostra o cursor de mão ao passar sobre o botão */
+}
+
+
+/* BOTÃO CARRINHO */
+button:first-child {
+    background-color: #F59E0B; /* Define o fundo do primeiro botão como laranja */
+    color: white; /* Define a cor do texto como branco */
+}
+
+
+/* BOTÃO COMPRAR */
+button:last-child {
+    background-color: #166534; /* Define o fundo do último botão como verde escuro */
+    color: white; /* Define a cor do texto como branco */
+}
+
+
+/* EFEITO AO PASSAR O MOUSE */
+button:hover {
+    opacity: 0.85; /* Deixa o botão um pouco transparente ao passar o mouse */
 }
