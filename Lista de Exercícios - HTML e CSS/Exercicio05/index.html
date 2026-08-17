@@ -22,9 +22,52 @@ Dois botões: limpar e enviar -->
                 <p>Faça sua inscrição para o evento!</p>
             </header>
 
-            <div>
+            <div class="formulario">
+                <form action="">
 
+             <!-- Nome Completo -->
+            <div class="campo">
+                <label for="nome">Nome Completo</label>
+                <input id="nome" type="text" placeholder="Escreva seu nome completo" required>
             </div>
+
+            <!-- E-mail -->
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="Escreva seu E-mail" required>
+            </div>
+
+            <!-- Data de Nascimento -->
+            <div class="campo">
+                <label for="data">Data de Nascimento</label>
+                <input id="data" type="date" required>
+            </div>
+
+            <!-- Tipo de Ingresso -->
+            <div class="campo">
+                <label for="ingresso">Tipo de ingresso</label>
+
+            <select id="ingresso">
+                <option value="meia">Meia</option>
+                <option value="inteira">Inteira</option>
+                <option value="vip">VIP</option>
+            </select>
+            </div>
+
+            <!-- Observações -->
+            <div class="campo">
+                <label for="obs">Alguma observação?</label>
+                <textarea id="obs" rows="5" placeholder="Digite alguma observação"></textarea>
+            </div>
+
+            <!-- Botões -->
+            <div class="botoes">
+                <button type="reset">Limpar</button>
+                <button type="submit">Enviar</button>
+            </div>
+
+    </form>
+</div>
             
 
         </main>

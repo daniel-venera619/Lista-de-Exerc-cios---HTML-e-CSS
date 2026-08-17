@@ -5,3 +5,78 @@ Os campos devem ter um espaçamento uniforme entre si (não use vários <br> sol
 O formulário inteiro deve estar dentro de um "cartão" central, com largura máxima definida (pesquise sobre max-width) 
 para não esticar demais em telas largas.
 Estilize o placeholder dos campos com uma cor diferente do texto digitado.*/
+
+/* CORPO DA PÁGINA */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url(https://i.scdn.co/image/ab67616d0000b2737447c6f7b2b006efd6a96251);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: auto;
+    margin: 0;
+}
+
+/* CARTÃO DO FORMULÁRIO */
+.formulario{
+    background-color:rgba(53, 51, 4, 0.2); /* branco com 85% de opacidade */
+    color: #11630a; 
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    max-width: 500px;
+    width: auto;
+
+    
+}
+
+/* TÍTULO */
+header{
+    text-align: center;
+    color: rgb(72, 225, 7);
+}
+
+/* AGRUPA LABEL E CAMPO */
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* CAMPOS */
+input,
+select,
+textarea{
+    width: 100%; /* campo proporcional ao container */
+    padding: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.1);
+    color: #ffffff;
+    font-size: 1rem; /* tamanho proporcional */
+    box-sizing: border-box; /* evita ultrapassar limites */
+}
+
+/* PLACEHOLDER */
+input::placeholder,
+textarea::placeholder{
+    color: gray;
+    font-style: italic;
+}
+
+/* BOTÕES */
+.botoes{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+}
