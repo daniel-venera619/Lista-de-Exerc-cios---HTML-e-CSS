@@ -13,3 +13,107 @@ O cartão do meio (o plano "recomendado") deve se destacar dos outros dois: maio
 ou "flutuando" um pouco acima dos demais (dica: pesquise sobre a propriedade transform ou simplesmente 
 ajuste a margin-top dele para negativo).
 Todos os botões devem ter o mesmo estilo, com efeito de hover. */
+
+
+/* O * no CSS é um seletor universal. Ele significa: “aplique isso a todos os elementos da página */
+*{
+    margin: 0; /*tira a margem padrão*/
+    padding: 0; /*tira o espaço interno padrão*/
+    box-sizing: border-box;/*facilita controlar o tamanho dos elementos*/
+}
+
+body{
+    background-color:  #160F14; /*cor do fundo*/
+    color: #FFF1E6; /*cor dos textos*/
+    font-family: Arial, Helvetica, sans-serif;/*tipo de letra*/
+    text-align: center;/*centraliza os textos*/
+    padding: 40px;/*espaço interno da pagina*/
+}
+
+/* Titulo */
+h1{
+    color: #C9AEB6; /*Cor do texto*/
+    font-size: 18px;/*tamanho do texto*/
+    margin-bottom: 10px;/*espaço abaixo do botão*/
+}
+
+/* Area onde ficam os tres planos*/
+.planos{
+    display: flex;/*Coloca os cartões lado a lado*/
+    justify-content: center;/*centraliza os cartões*/
+    align-items: center;/*alinha os carotões verticalmente*/
+    gap: 25px;/*espaço entre os cartões*/
+}
+
+/*Estilo dos três cartões*/
+.basico, .padrao, .premium {
+    background-color: #2A151E; /*Cor do fundo cartão*/
+    border: 2px solid #6E2035;/*Borda*/
+    border-radius: 15px;/*deixa os cantos aredondados*/
+    width: 300px;/*largura dos cartões*/
+    min-height: 400px;/*altura maxima dos cartões*/
+    padding: 30px; /* espaço dentro dos cartões */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* sombra */
+
+}
+
+/*Nome dos Planos*/
+h2{
+    color: #E84A70; /*cor do texto*/
+    margin-bottom: 20px;/*espaço abaixo do nome*/
+}
+
+/*Preço*/
+h3{
+    color: #FFF1E6;/*cor do Texto*/
+    font-size: 30px;/*Tamanho da letra*/
+    margin-bottom: 25px; /*espaço abaixo do preço*/
+}
+
+/*Lista de benificio*/
+
+ul {
+    list-style: none; /* tira as bolinhas da lista */
+    margin-bottom: 30px; /* espaço abaixo da lista */
+}
+
+li {
+    color: #C9AEB6; /* cor dos benefícios */
+    margin: 15px 0; /* espaço entre os benefícios */
+}
+
+/*Botão*/
+button{
+    background-color: #C92A4B;/*Cor de fundo do botão*/
+    color: #FFF1E6; /* cor do texto do botão */
+    border: none /*tira a borada padrão*/;
+    padding: 13px 35px;/*tamanho interno do botão*/
+    border-radius: 8px;/*arendonda o botão*/
+    font-size: 16px; /*tamnho da letra*/
+    font-weight: bold;/*deixa a letra em negrito*/
+    cursor: pointer; /*muda o curso oara uma mão*/
+    transition: 0.3s;/*deixa a animação suave*/
+}
+
+/* Quando passar o mouse no botão */
+button:hover {
+    background-color: #E84A70; /* muda a cor do botão */
+    transform: scale(1.08); /* aumenta um pouco o botão */
+}
+
+/* Plano recomendado */
+.padrao {
+    border: 3px solid #E84A70; /* borda mais destacada */
+    box-shadow: 0 12px 30px rgba(232, 74, 112, 0.3); /* sombra rosa */
+}
+
+/* Quando passar o mouse nos cartões básico e premium */
+.basico:hover,
+.premium:hover {
+    transform: translateY(-8px); /* sobe um pouco o cartão */
+}
+
+/* Quando passar o mouse no plano padrão */
+.padrao:hover {
+    transform: translateY(-25px); /* sobe ainda mais o cartão */
+}
