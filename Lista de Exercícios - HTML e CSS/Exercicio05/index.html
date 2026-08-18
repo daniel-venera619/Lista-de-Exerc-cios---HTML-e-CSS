@@ -9,67 +9,69 @@ Um campo de texto longo (textarea) para "Alguma observação?";
 Dois botões: limpar e enviar -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Cadastro de Evento</title>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <main>
-            <header>
-                <h1>Show Dos Montanari</h1>
-                <p>Faça sua inscrição para o evento!</p>
-            </header>
 
-            <div class="formulario">
-                <form action="">
+<body>
+    <main>
+        <header>
+            <h1>Show Dos Montanari</h1>
+            <p>Faça sua inscrição para o evento!</p>
+        </header>
 
-             <!-- Nome Completo -->
-            <div class="campo">
-                <label for="nome">Nome Completo</label>
-                <input id="nome" type="text" placeholder="Escreva seu nome completo" required>
-            </div>
+        <div class="formulario">
+            <form action="">
 
-            <!-- E-mail -->
-            <div class="campo">
-                <label for="email">E-mail</label>
-                <input id="email" type="email" placeholder="Escreva seu E-mail" required>
-            </div>
+                <!-- Nome Completo -->
+                <div class="campo">
+                    <label for="nome">Nome Completo</label>
+                    <input id="nome" type="text" placeholder="Escreva seu nome completo" required>
+                </div>
 
-            <!-- Data de Nascimento -->
-            <div class="campo">
-                <label for="data">Data de Nascimento</label>
-                <input id="data" type="date" required>
-            </div>
+                <!-- E-mail -->
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="Escreva seu E-mail" required>
+                </div>
 
-            <!-- Tipo de Ingresso -->
-            <div class="campo">
-                <label for="ingresso">Tipo de ingresso</label>
+                <!-- Data de Nascimento -->
+                <div class="campo">
+                    <label for="data">Data de Nascimento</label>
+                    <input id="data" type="date" required>
+                </div>
 
-            <select id="ingresso">
-                <option value="meia">Meia</option>
-                <option value="inteira">Inteira</option>
-                <option value="vip">VIP</option>
-            </select>
-            </div>
+                <!-- Tipo de Ingresso -->
+                <div class="campo">
+                    <label for="ingresso">Tipo de ingresso</label>
 
-            <!-- Observações -->
-            <div class="campo">
-                <label for="obs">Alguma observação?</label>
-                <textarea id="obs" rows="5" placeholder="Digite alguma observação"></textarea>
-            </div>
+                    <select id="ingresso">
+                        <option value="meia">Meia</option>
+                        <option value="inteira">Inteira</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                </div>
 
-            <!-- Botões -->
-            <div class="botoes">
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button>
-            </div>
+                <!-- Observações -->
+                <div class="campo">
+                    <label for="obs">Alguma observação?</label>
+                    <textarea id="obs" rows="5" placeholder="Digite alguma observação"></textarea>
+                </div>
 
-    </form>
-</div>
-            
+                <!-- Botões -->
+                <div class="botoes">
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
 
-        </main>
-    </body>
+
+    </main>
+</body>
+
 </html>
